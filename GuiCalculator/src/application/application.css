@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+	-fx-background-color: #000000;
+	-fx-text-fill: #00FF00;
+	-fx-font-size: 30px;
+	-fx-padding:4 4 4 4;
+	-fx-border-radius: 4;
+	-fx-border-color: #BFFF00;
+}
+.button:hover{
+	-fx-background-color: #0078D7;
+}
+.label1{
+	-fx-background-color:#FFFFFF;
+}
+.label2{
+	-fx-background-color:#FFFFFF;
+}
+.root{
+	-fx-background-color:#FFFFFF;
+}
+.equal:hover{
+	-fx-background-color: #FF0000;
+}
