@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="323.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainContoler">
+<AnchorPane id="AnchorPane" fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="323.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainContoler">
     <stylesheets>
         <URL value="@application.css" />
     </stylesheets>
@@ -38,10 +39,13 @@
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font></Button>
-            <Button fx:id="B" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="B" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="B" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#BackSpace" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="Arial Bold" size="24.0" />
-               </font></Button>
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#19f000" glyphName="BACKSPACE" size="30" />
+               </graphic></Button>
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="_/" GridPane.columnIndex="1">
                <font>
                   <Font name="Arial Bold" size="24.0" />
@@ -122,18 +126,18 @@
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font></Button>
-            <Button fx:id="CE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="CE" GridPane.rowIndex="1">
+            <Button fx:id="CE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#CE" text="CE" GridPane.rowIndex="1">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Button>
          </children>
       </GridPane>
-      <Label fx:id="label2" alignment="CENTER_RIGHT" layoutY="-1.0" prefHeight="24.0" prefWidth="323.0" textAlignment="RIGHT" textFill="#393737">
+      <Label fx:id="label2" alignment="CENTER_RIGHT" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="323.0" textAlignment="RIGHT" textFill="#393737">
          <font>
             <Font name="System Bold" size="11.0" />
          </font></Label>
-      <Label fx:id="label1" alignment="CENTER_RIGHT" layoutY="23.0" prefHeight="51.0" prefWidth="323.0" textAlignment="RIGHT">
+      <Label fx:id="label1" alignment="CENTER_RIGHT" layoutY="23.0" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="323.0" textAlignment="RIGHT">
          <font>
             <Font name="Arial Bold" size="44.0" />
          </font></Label>

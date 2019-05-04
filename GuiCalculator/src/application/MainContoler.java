@@ -71,6 +71,13 @@ public void equal(ActionEvent event) {
 	n2=0;
 	 con=true;
 }
+public void CE(ActionEvent event) {
+	label1.setText("");
+}
+public void BackSpace(ActionEvent event) {
+	int index=label1.getText().length();
+	label1.setText(label1.getText().substring(0, index-1));
+}
     
     
 
